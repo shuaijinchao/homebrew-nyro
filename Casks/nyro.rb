@@ -12,6 +12,10 @@ cask "nyro" do
     url "https://github.com/shuaijinchao/nyro/releases/download/v#{version}/Nyro_#{version}_#{arch}.dmg"
 
     app "Nyro.app"
+    postflight do
+      system_command "/usr/bin/xattr",
+                     args: ["-rd", "com.apple.quarantine", "#{appdir}/Nyro.app"]
+    end
 
     zap trash: [
       "~/Library/Application Support/com.nyro.ai-gateway",
@@ -21,11 +25,8 @@ cask "nyro" do
     ]
 
     caveats <<~EOS
-      If you encounter the "App is damaged" error, please run:
+      If macOS still blocks Nyro after install, run:
         sudo xattr -rd com.apple.quarantine "/Applications/Nyro.app"
-
-      Or install with the --no-quarantine flag:
-        brew install --cask --no-quarantine nyro
     EOS
   end
 

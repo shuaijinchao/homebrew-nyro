@@ -6,10 +6,10 @@ Homebrew Cask formulae for [Nyro AI Gateway](https://github.com/shuaijinchao/nyr
 
 ```bash
 brew tap shuaijinchao/nyro
-brew install --cask --no-quarantine nyro
+brew install --cask nyro
 ```
 
-> The `--no-quarantine` flag prevents macOS Gatekeeper from blocking the unsigned app.
+> The Cask runs a post-install step to clear the quarantine attribute for `Nyro.app` on macOS.
 
 ## Upgrade
 
