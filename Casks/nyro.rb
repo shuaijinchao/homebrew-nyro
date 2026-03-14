@@ -1,5 +1,5 @@
 cask "nyro" do
-  version "1.0.1"
+  version "1.1.0"
   sha256 :no_check
 
   name "Nyro"
