@@ -3,7 +3,7 @@ cask "nyro" do
 
   name "Nyro"
   desc "Local-first AI protocol gateway for OpenAI / Anthropic / Gemini"
-  homepage "https://github.com/shuaijinchao/nyro"
+  homepage "https://github.com/shuaijinchao/Nyro"
 
   on_macos do
     arch arm: "aarch64", intel: "x64"
@@ -43,4 +43,5 @@ cask "nyro" do
       system_command "/bin/chmod", args: ["+x", "#{staged_path}/Nyro_#{version}_#{arch}.AppImage"]
     end
   end
+
 end
