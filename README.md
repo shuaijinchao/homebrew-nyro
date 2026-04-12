@@ -1,11 +1,11 @@
 # Homebrew Tap for Nyro
 
-Homebrew Cask formulae for [Nyro AI Gateway](https://github.com/NYRO-WAY/NYRO).
+Homebrew Cask formulae for [Nyro AI Gateway](https://github.com/nyroway/nyro).
 
 ## Install
 
 ```bash
-brew tap nyro-way/nyro
+brew tap nyroway/nyro
 brew install --cask nyro
 ```
 
@@ -34,4 +34,4 @@ brew uninstall --cask nyro
 
 ## License
 
-[Apache 2.0](https://github.com/NYRO-WAY/NYRO/blob/master/LICENSE)
+[Apache 2.0](https://github.com/nyroway/nyro/blob/master/LICENSE)
