@@ -1,5 +1,5 @@
 cask "nyro" do
-  version "1.6.2"
+  version "1.7.1"
 
   name "Nyro"
   desc "Local-first AI protocol gateway for OpenAI / Anthropic / Gemini"
@@ -7,8 +7,8 @@ cask "nyro" do
 
   on_macos do
     arch arm: "aarch64", intel: "x64"
-    sha256 arm:   "1ae8711378c4456bea82a0b2c47b117b605a706d0cce425b94d57798c401267f",
-           intel: "0c13d7441bf3c968c458dbd3dc51cb22ed2dd18c3077052694cdc615b178633f"
+    sha256 arm:   "2d05aa7ee2531e3af784635ea3a623af73d79132cd7f34cbf8115e8ae5067187",
+           intel: "fbf8b756095a4cacfb659c31c44f40a3aa4533b6b6199ae419616abb38429b26"
 
     url "https://github.com/nyroway/nyro/releases/download/v#{version}/Nyro_#{version}_#{arch}.dmg"
 
@@ -33,8 +33,8 @@ cask "nyro" do
 
   on_linux do
     arch arm: "aarch64", intel: "amd64"
-    sha256 arm:   "00463c5513831a2caa2df5e673ec14d5aaf6ee798f980241ca5b0bd940861f5a",
-           intel: "5da8ddf07a414794ec55f09fb8dded3631f0a216361cccd3a430840cb1694a3e"
+    sha256 arm:   "215ad8052dd6dc5efba5ebfd75395fda906a9138c49d50a7a0932deb7968a351",
+           intel: "faadea8d4d11de1a3d99e14413a55e52c240848df613528efd221ddb4d444d4b"
 
     url "https://github.com/nyroway/nyro/releases/download/v#{version}/Nyro_#{version}_#{arch}.AppImage"
     binary "Nyro_#{version}_#{arch}.AppImage", target: "nyro"
