@@ -7,8 +7,8 @@ cask "nyro" do
 
   on_macos do
     arch arm: "aarch64", intel: "x64"
-    sha256 arm:   "39b9165c0e15c2bfbc23c45d035d87709f68e88d11d5aa4bae2e1b4d3f46247e",
-           intel: "48bef9a5c0e40ac3501c523590728d0db2b254c1556c20978f0e339dba35dfae"
+    sha256 arm:   "a40c319a21fca341f5cfe8d56723c9d158c22621cbcf2651be5326af56ffe75d",
+           intel: "2a26aa004aa6f7fb25225ab19c62a6b17b16a1dc635852d177076b0e0431954d"
 
     url "https://github.com/nyroway/nyro/releases/download/v#{version}/Nyro_#{version}_#{arch}.dmg"
 
@@ -33,8 +33,8 @@ cask "nyro" do
 
   on_linux do
     arch arm: "aarch64", intel: "amd64"
-    sha256 arm:   "f4ab04b9ab3019e235486432598362a009454a6e7d0012814669ffa31fd25522",
-           intel: "ce42fcf3c7bb762c87a9f05b247bac2c98b0b73c3bd1404def4bb09f2085b496"
+    sha256 arm:   "717456f41c04defc1379e303e6e036af8e930cb5f67d144bb460133d891bf712",
+           intel: "d4dab4ca0df190ce78a6018031136776eeb96057972584e2a6d8a529b811af51"
 
     url "https://github.com/nyroway/nyro/releases/download/v#{version}/Nyro_#{version}_#{arch}.AppImage"
     binary "Nyro_#{version}_#{arch}.AppImage", target: "nyro"
